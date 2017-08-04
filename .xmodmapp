@@ -1,0 +1,7 @@
+remove Control = Control_L
+remove Shift = Shift_L
+keysym Control_L = Shift_L
+keysym Shift_L = Control_L
+add Control = Control_L
+add Shift = Shift_L
+keycode 105 = Return
