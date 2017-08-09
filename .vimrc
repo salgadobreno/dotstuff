@@ -85,6 +85,8 @@ nmap <leader>n :NERDTreeToggle<cr>
 "nmap <leader>/ :NERDComToggleComment<cr>
 let NERDTreeShowHidden=1
 
+set number
+set relativenumber
 set expandtab
 set shiftwidth=2
 set softtabstop=2
