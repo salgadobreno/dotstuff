@@ -1,0 +1,2 @@
+adb shell wm density 200 && adb reboot
+adb shell wm size reset && adb reboot

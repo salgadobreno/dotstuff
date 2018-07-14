@@ -1,0 +1,8 @@
+adb devices
+adb tcpip 5555
+adb connect 10.0.0.101:5555
+disconnect usb
+./gradlew assembleDebug
+find . -name \"*.apk\"
+adb install -r ./app/build/outputs/apk/app-debug.apk
+./gradlew assembleDebug

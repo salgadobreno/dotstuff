@@ -89,12 +89,37 @@ set number
 set relativenumber
 set expandtab
 set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 set hlsearch
 set ic
+set cursorline " highlight current line
+filetype indent on " load filetype-specific indent files
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+" space open/closes folds
+nnoremap <space> za
+set foldmethod=indent   " fold based on indent level
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+" move to beginning/end of line
+nnoremap B ^
+nnoremap E $
 
 let g:ctrlp_custom_ignore = 'node_modules'
 let NERDTreeIgnore = ['node_modules']
 
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
+set viewdir=~/.vim/view//
+
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave *z_mind mkview
+  autocmd BufWinEnter *z_mind loadview
+  autocmd BufWinEnter *z_mind set foldmethod=manual
+augroup END
+hi Normal guibg=NONE ctermbg=NONE
