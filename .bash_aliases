@@ -18,7 +18,7 @@ alias twcnl='t context none; t'
 alias twcgl='t context ground; t'
 alias twchl='t context horizon; t'
 alias twcol='t context out; t'
-alias twan='t context none; t +active or +next'
+alias twan='t context none; t +ACTIVE or +next'
 
 alias twa="t add"
 alias twal="t add +lateral"
