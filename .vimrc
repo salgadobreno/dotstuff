@@ -54,6 +54,13 @@ Plugin 'ktonga/vim-follow-my-lead'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'Drawit'
 Plugin 'autoclose'
+Plugin 'wesQ3/vim-windowswap'
+Plugin 'itchyny/calendar.vim'
+Plugin 'vim-scripts/Txtfmt-The-Vim-Highlighter'
+
+" Calendar
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -123,3 +130,4 @@ augroup remember_folds
   autocmd BufWinEnter *z_mind set foldmethod=manual
 augroup END
 hi Normal guibg=NONE ctermbg=NONE
+
